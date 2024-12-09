@@ -1,40 +1,84 @@
-# Django Project Setup
+# Настройка Django проекта
 
-This is a basic setup guide for getting a Django project up and running.
+Это руководство по настройке Django проекта и его запуску.
 
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Setup](#setup)
-  - [Clone the Repository](#clone-the-repository)
-  - [Create Virtual Environment](#create-virtual-environment)
-  - [Install Dependencies](#install-dependencies)
-  - [Apply Migrations](#apply-migrations)
-  - [Run the Application](#run-the-application)
-- [Running Tests](#running-tests)
-- [Deployment](#deployment)
-- [Acknowledgments](#acknowledgments)
+## Содержание
+- [Предварительные требования](#предварительные-требования)
+- [Настройка](#настройка)
+  - [Клонирование репозитория](#клонирование-репозитория)
+  - [Создание виртуального окружения](#создание-виртуального-окружения)
+  - [Установка зависимостей](#установка-зависимостей)
+  - [Создание миграций и их применение](#создание-миграций-и-их-применение)
+  - [Запуск приложения](#запуск-приложения)
 
 ---
 
-## Prerequisites
+## Предварительные требования
 
-Before you start, make sure you have the following installed on your machine:
+Перед тем как начать, убедитесь, что у вас установлено следующее:
 
-- Python 3.8+ (preferably Python 3.8 or later)
-- pip (Python package installer)
-- Git (to clone the repository)
-
-For local development, you can also install:
-- PostgreSQL, MySQL, or SQLite (depending on your database configuration)
+- Python 3.8+ (рекомендуется Python 3.10 или новее)
+- pip (менеджер пакетов для Python)
+- Git (для клонирования репозитория)
 
 ---
 
-## Setup
+## Настройка
 
-### Clone the Repository
+### Клонирование репозитория
 
-First, clone the repository to your local machine:
+Клонируйте репозиторий на свою локальную машину:
 
 ```bash
 git clone <repository-url>
 cd <repository-folder>
+```
+
+### Создание виртуального окружения
+Создайте виртуальное окружение для изоляции зависимостей вашего проекта:
+
+```bash
+python -m venv venv
+```
+
+Активируйте виртуальное окружение:
+
+```bash
+.\venv\Scripts\activate
+```
+
+###Установка зависимостей
+
+Установите необходимые зависимости, выполнив:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Создание миграций и их применение
+
+Создайте миграции для вашего проекта:
+
+```bash
+python manage.py makemigrations
+```
+
+Примените миграции для настройки базы данных:
+
+```bash
+python manage.py migrate
+```
+
+### Запуск приложения
+
+Теперь можно запустить Django сервер:
+
+```bash
+python manage.py runserver
+```
+
+Приложение будет доступно локально по адресу http://127.0.0.1:8000/.
+
+
+
+
