@@ -30,7 +30,7 @@
 Клонируйте репозиторий на свою локальную машину:
 
 ```bash
-git clone [<repository-url>](https://github.com/Imtbdev/marine-debris-detection?tab=readme-ov-file#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-django-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
+git clone https://github.com/Imtbdev/marine-debris-detection
 cd <repository-folder>
 ```
 
