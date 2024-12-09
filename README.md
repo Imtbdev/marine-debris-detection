@@ -1,13 +1,16 @@
-# YOLO Debris Detection Project
+# Django Project Setup
 
-This project is designed to detect debris using YOLO (You Only Look Once) object detection models. It provides an environment for training, testing, and deploying YOLO models.
+This is a basic setup guide for getting a Django project up and running.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-- [Dataset Structure](#dataset-structure)
-- [Training](#training)
-- [Testing](#testing)
+  - [Clone the Repository](#clone-the-repository)
+  - [Create Virtual Environment](#create-virtual-environment)
+  - [Install Dependencies](#install-dependencies)
+  - [Apply Migrations](#apply-migrations)
+  - [Run the Application](#run-the-application)
+- [Running Tests](#running-tests)
 - [Deployment](#deployment)
 - [Acknowledgments](#acknowledgments)
 
@@ -15,20 +18,23 @@ This project is designed to detect debris using YOLO (You Only Look Once) object
 
 ## Prerequisites
 
-Ensure you have the following software installed:
-- Python 3.8+ 
-- Git
-- pip
+Before you start, make sure you have the following installed on your machine:
 
-For GPU training, ensure you have:
-- NVIDIA GPU with CUDA 11.0+ installed
-- cuDNN compatible with your CUDA version
+- Python 3.8+ (preferably Python 3.8 or later)
+- pip (Python package installer)
+- Git (to clone the repository)
+
+For local development, you can also install:
+- PostgreSQL, MySQL, or SQLite (depending on your database configuration)
 
 ---
 
 ## Setup
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd yolo_debris
+### Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
